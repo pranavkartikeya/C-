@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+int main() {
+
+long n;
+cin>>n;
+int actualno=n;
+
+int reversedno=0;
+
+while(n>0){
+    int ld =n%10;
+
+    reversedno = (reversedno*10) + ld;
+
+    n=n/10;
+
+}
+cout<<reversedno;
+cout<<endl;
+if(reversedno==actualno) cout<<"palindrome";
+else cout<<"not a palindrome";
+
+return 0;
+
+}
+
+
+
+
