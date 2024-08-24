@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+int main() {
+
+int n;
+cin>>n;
+int original=n;
+int armstrongno=0;
+while(n>0){
+    int l = n%10;
+    armstrongno += (int)pow(l,3);
+    n=n/10;
+}
+cout<<armstrongno;
+if(original == armstrongno){
+    cout<<endl<<"it is armstrong no";
+
+}
+else{
+    cout << "no";
+}
+
+}
+
+
+
+//long in1,in2;
+//cin>>in1>>in2;
+
+/*int gcd=1;   // brute force
+int ls;
+if (in1>in2)  ls=in2;
+else if(in2>in1) ls=in1;
+else ls=in1;
+for (int i=1;i<=ls;i++){
+    if((in1%i==0)&&(in2%i==0)) gcd =i;
+}
+cout<<gcd; */
+
+
+
+
