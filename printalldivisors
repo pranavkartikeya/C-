@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+int main() {
+
+long n;
+cin>>n;
+//O(N) time complexity \
+//comes in a sorted way
+/*for (int i=1;i<=n;i++){
+    if(n%i==0){
+         cout<<i;
+    }
+} */ 
+//Best approach
+// O(sqrt(n)) : TC;
+
+vector<int> ls;
+for (int i=1;i<=sqrt(n);i++) {// sqrt(n)== i*i<=n
+    if(n%i==0){
+         cout<<i;
+         if((n/i) !=1){
+         ls.push_back(n/i);
+         }
+    }
+}
+sort(ls.begin(),ls.end()); // nlog(n) : TC; here n is no of divisors.
+
+for (auto it : ls) cout<<it<<" ";   
+
+return 0;
+
+
+}
+  
+
+
+
+
+
+
+
