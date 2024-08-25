@@ -25,19 +25,6 @@ else{
 
 
 
-//long in1,in2;
-//cin>>in1>>in2;
-
-/*int gcd=1;   // brute force
-int ls;
-if (in1>in2)  ls=in2;
-else if(in2>in1) ls=in1;
-else ls=in1;
-for (int i=1;i<=ls;i++){
-    if((in1%i==0)&&(in2%i==0)) gcd =i;
-}
-cout<<gcd; */
-
 
 
 
